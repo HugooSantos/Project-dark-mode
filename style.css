@@ -19,18 +19,22 @@ html {
 body {
     background-color: var(--bg);
     font-family: 'Roboto', sans-serif;
+
 }
 
 header{
     background-color: var(--background-menu-bar);
     max-width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7vh;
+    height: 9vh;
 }
-
+header div img{
+    margin-left:20px;
+    margin-top:3%;
+}
 #menu-bar ul li{
     display: inline; 
     list-style: none;
@@ -58,11 +62,15 @@ p {
     line-height: 1.8em;
     margin-top: 2em;
 }
+main{
+    max-width: 80%;
+}
 
 input[type=checkbox]{
     height: 0;
     width: 0;
     visibility: hidden;
+    
 }
 
 label {
