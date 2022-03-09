@@ -8,7 +8,7 @@ html {
     height: 100%;
     font-family: 'Montserrat';
     --bg: #fff;
-    --color-headings: #0077FF;
+    --color-headings: #333333;
     --background-menu-bar:#FFC900;
     --text-in-menu-bar:#0077FF; 
     --text-in-menu-bar-hover:#fff; 
@@ -50,20 +50,13 @@ header div img{
     color: var( --text-in-menu-bar-hover);
 }
 
-h1 {
-    margin: 0;
-    color: var(--color-headings);
-}
 
-p {
-    color: var(--color-text);
-    grid-area: content;
-    font-size: 1.1em;
-    line-height: 1.8em;
-    margin-top: 2em;
-}
 main{
     max-width: 80%;
+    margin:0 auto;
+}
+.toggle{
+    margin:14px 10px 0 auto; 
 }
 
 input[type=checkbox]{
@@ -107,4 +100,20 @@ input:checked + label::after {
 
 label:active:after {
     width: 45px;
+}
+
+#content{
+    margin-top: 60px;
+}
+
+h1 {
+    margin: 0;
+    color: var(--color-headings);
+}
+
+p {
+    color: var(--color-text);
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin-top: 1.4em;
 }
