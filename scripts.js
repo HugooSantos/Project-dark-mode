@@ -3,10 +3,12 @@ const checkbox = document.querySelector("input[name=theme]")
 const contentDarkMode = document.querySelector(".content-in-dark-mode")
 
 const teste = true
-
-if(teste == true ){
-    
+function testeDarkMode(){
+    if(teste == true ){
+        contentDarkMode.classList.remove("content-in-dark-mode")
+    }
 }
+
 
 const getStyle = (element, style) => 
     window
