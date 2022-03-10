@@ -54,7 +54,7 @@ header div img{
 main{
     max-width: 80%;
     margin:0 auto;
-    height: 70vh;
+    height: auto;
 }
 .toggle{
     margin:7px 7px 0 20px; 
@@ -115,7 +115,13 @@ label:active:after {
 #content{
     margin-top: 60px;
     display: flex;
+  
 }
+.content-in-dark-mode{
+    display: none;
+    
+}
+
 
 h1 {
     margin: 0;

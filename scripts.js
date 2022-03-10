@@ -1,5 +1,12 @@
 const html = document.querySelector("html")
 const checkbox = document.querySelector("input[name=theme]")
+const contentDarkMode = document.querySelector(".content-in-dark-mode")
+
+const teste = true
+
+if(teste == true ){
+    
+}
 
 const getStyle = (element, style) => 
     window
