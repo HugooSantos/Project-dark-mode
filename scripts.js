@@ -1,11 +1,14 @@
 const html = document.querySelector("html")
 const checkbox = document.querySelector("input[name=theme]")
 const contentDarkMode = document.querySelector(".content-in-dark-mode")
+const contentDaymode = document.querySelector(".content-in-day-mode")
+
 
 const teste = true
 function testeDarkMode(){
     if(teste == true ){
         contentDarkMode.classList.remove("content-in-dark-mode")
+        contentDaymode.classList.toggle(".hide")
     }
 }
 

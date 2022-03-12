@@ -121,6 +121,9 @@ label:active:after {
     display: none;
     
 }
+.hide{
+    display: none;
+}
 
 
 h1 {
