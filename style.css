@@ -9,11 +9,12 @@ html {
     font-family: 'Montserrat', sans-serif;
     --bg: #FFC900;
     --color-headings: #000;
-    --background-menu-bar:#1818f3;
-    --text-in-menu-bar:#fff; 
-    --text-in-menu-bar-hover:#fff; 
+    /* --background-menubar:#1818f3;
+    --text-inmenubar:#fff; 
+    --text-inmenubarhover:#fff;  */
     --color-text: #000;
-   
+    --background-header:#1818f3;
+    --text-menu:#fff;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 }
 
 header{
-    background-color: var(--background-menu-bar);
+    background-color: var(--background-header);
     max-width: 80%;
     margin: 7px auto;
     border-radius: 10px;
@@ -43,12 +44,12 @@ header div img{
 }
 #menu-bar ul li a{
     text-decoration: none;
-    color: var( --text-in-menu-bar);
+    color: var(--text-menu);
     font-size: 20px;
     font-weight: bold;
 }
 #menu-bar ul li a:hover{
-    color: var( --text-in-menu-bar-hover);
+    color: var( --text-inmenubarhover);
 }
 
 
@@ -162,12 +163,13 @@ p {
     font-size: 1.1em;
     line-height: 1.3;
     margin-top: 1.4em;
+    font-weight: bold;
 }
 
 footer{
     max-width: 80%;
     margin:0 auto;
-    background-color: var(--background-menu-bar);
+    background-color: var(--background-header);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -186,5 +188,5 @@ footer div nav ul li{
 }
 .fa-instagram, .fa-linkedin , .fa-github{
     font-size:30px;
-    color:var(--text-in-menu-bar)
+    color:var(--text-menu)
 }

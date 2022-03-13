@@ -33,20 +33,19 @@ const getStyle = (element, style) =>
 const initialColors = {
     bg: getStyle(html, "--bg"),
     colorHeadings: getStyle(html, "--color-headings"),
-    backgroundMenu: getStyle(html, "--background-menu-bar"),
-    textInMenu: getStyle(html, "--text-in-menu-bar"),
-    textInMenuHover: getStyle(html , "--text-in-menu-bar-hover"),
     colorText: getStyle(html, "--color-text"),
+    backgroundHeader: getStyle(html, "--background-header"),
+    textMenu: getStyle(html, "--text-menu")
 }
 
 const darkMode = {
     bg: "#333333",
-    colorHeadings: "#3664FF",
-    backgroundMenu: getStyle(html, "--background-menu-bar"),
-    textInMenu: getStyle(html, "--text-in-menu-bar"),
-    textInMenuHover: getStyle(html , "--text-in-menu-bar-hover"),
-    colorText: "#B5B5B5"
+    colorHeadings: "#FFC900",
+    colorText: "#FFC900",
+    backgroundHeader:"#FFC900",
+    textMenu:"#1818f3"
 }
+
 
 const transformKey = key => 
     "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
