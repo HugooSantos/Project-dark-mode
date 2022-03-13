@@ -58,16 +58,41 @@ main{
     height: auto;
 }
 .toggle{
-    margin:7px 7px 0 20px; 
+    margin:0px 7px 0 20px; 
 }
 .align-center{
     display:flex;
     justify-content: flex-end;
     margin-top: 14px;
+    align-items: center;
 }
-.align-center div h1{
-    color:var(--text-in-menu-bar)
+.align-center div p{
+    color:var(--color-text);
+    line-height: 2;
+    display: inline;
+    padding: 10px;
 }
+#arrow-icon{
+    font-size: 30px;
+}
+#text-in-icon-arrow{
+    transform: translateX(-50%);
+    position: relative;
+    animation-name: animationArrow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animationArrow{
+    0%{
+        left:0px;
+    }
+    100%{
+        left:20px;
+    }
+}
+
 
 input[type=checkbox]{
     height: 0;

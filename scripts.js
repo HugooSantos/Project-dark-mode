@@ -3,6 +3,8 @@ const checkbox = document.querySelector("input[name=theme]")
 const contentDarkMode = document.querySelector(".content-in-dark-mode")
 const contentDaymode = document.querySelector(".content-in-day-mode")
 const imgMain = document.querySelector("#img-main")
+const logoHeader = document.querySelector("#logo-header")
+const logoFooter = document.querySelector("#logo-footer")
 
 
 function darkModeChanges(){
@@ -10,12 +12,16 @@ function darkModeChanges(){
     contentDaymode.classList.remove("content-in-day-mode")
     contentDaymode.classList.add("hide")
     imgMain.src = 'assets/img/batman.png'
+    logoHeader.src = 'assets/img/logo-night.png'
+    logoFooter.src = 'assets/img/logo-night.png'
 }
 function dayModeChanges(){
     contentDarkMode.classList.add("content-in-dark-mode")
     contentDaymode.classList.remove("hide")
     contentDaymode.classList.add("content-in-day-mode")
     imgMain.src = 'assets/img/superman.png'
+    logoHeader.src = 'assets/img/logo-day.png'
+    logoFooter.src = 'assets/img/logo-day.png'
 }
 
 const getStyle = (element, style) => 
@@ -27,12 +33,18 @@ const getStyle = (element, style) =>
 const initialColors = {
     bg: getStyle(html, "--bg"),
     colorHeadings: getStyle(html, "--color-headings"),
+    backgroundMenu: getStyle(html, "--background-menu-bar"),
+    textInMenu: getStyle(html, "--text-in-menu-bar"),
+    textInMenuHover: getStyle(html , "--text-in-menu-bar-hover"),
     colorText: getStyle(html, "--color-text"),
 }
 
 const darkMode = {
     bg: "#333333",
     colorHeadings: "#3664FF",
+    backgroundMenu: getStyle(html, "--background-menu-bar"),
+    textInMenu: getStyle(html, "--text-in-menu-bar"),
+    textInMenuHover: getStyle(html , "--text-in-menu-bar-hover"),
     colorText: "#B5B5B5"
 }
 
