@@ -15,7 +15,7 @@ function dayModeChanges(){
     contentDarkMode.classList.add("content-in-dark-mode")
     contentDaymode.classList.remove("hide")
     contentDaymode.classList.add("content-in-day-mode")
-    imgMain.src = 'assets/img/superman.jpeg'
+    imgMain.src = 'assets/img/superman.png'
 }
 
 const getStyle = (element, style) => 
