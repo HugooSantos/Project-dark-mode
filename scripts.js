@@ -2,16 +2,21 @@ const html = document.querySelector("html")
 const checkbox = document.querySelector("input[name=theme]")
 const contentDarkMode = document.querySelector(".content-in-dark-mode")
 const contentDaymode = document.querySelector(".content-in-day-mode")
+const imgMain = document.querySelector("#img-main")
 
 
-const teste = true
-function testeDarkMode(){
-    if(teste == true ){
-        contentDarkMode.classList.remove("content-in-dark-mode")
-        contentDaymode.classList.toggle(".hide")
-    }
+function darkModeChanges(){
+    contentDarkMode.classList.remove("content-in-dark-mode")
+    contentDaymode.classList.remove("content-in-day-mode")
+    contentDaymode.classList.add("hide")
+    imgMain.src = 'assets/img/batman.png'
 }
-
+function dayModeChanges(){
+    contentDarkMode.classList.add("content-in-dark-mode")
+    contentDaymode.classList.remove("hide")
+    contentDaymode.classList.add("content-in-day-mode")
+    imgMain.src = 'assets/img/superman.jpeg'
+}
 
 const getStyle = (element, style) => 
     window
@@ -21,7 +26,6 @@ const getStyle = (element, style) =>
 
 const initialColors = {
     bg: getStyle(html, "--bg"),
-    bgPanel: getStyle(html, "--bg-panel"),
     colorHeadings: getStyle(html, "--color-headings"),
     colorText: getStyle(html, "--color-text"),
 }
@@ -44,5 +48,26 @@ const changeColors = (colors) => {
 
 
 checkbox.addEventListener("change", ({target}) => {
-    target.checked ? changeColors(darkMode) : changeColors(initialColors)
+    if(target.checked){
+        changeColors(darkMode)
+        darkModeChanges()
+        localStorage.setItem('gmtNightMode', 'true')
+
+
+    }
+    else{
+        changeColors(initialColors)
+        dayModeChanges()
+        localStorage.removeItem('gmtNightMode')
+    }
+
 })
+const nightModeStorage = localStorage.getItem('gmtNightMode')
+
+    if(nightModeStorage){
+      changeColors(darkMode)
+    }
+    else {
+      changeColors(initialColors)
+    }
+
