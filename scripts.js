@@ -6,6 +6,23 @@ const imgMain = document.querySelector("#img-main")
 const logoHeader = document.querySelector("#logo-header")
 const logoFooter = document.querySelector("#logo-footer")
 
+const nightModeStorage = localStorage.getItem('gmtNightMode')
+
+function load(){
+    if(nightModeStorage){
+        changeColors(darkMode)
+        checkbox.checked
+        checkbox.after
+        darkModeChanges()
+      }
+      else {
+        changeColors(initialColors)
+        darkModeChanges()
+    }
+  
+  
+}
+
 
 function darkModeChanges(){
     contentDarkMode.classList.remove("content-in-dark-mode")
@@ -73,12 +90,4 @@ checkbox.addEventListener("change", ({target}) => {
     }
 
 })
-const nightModeStorage = localStorage.getItem('gmtNightMode')
-
-    if(nightModeStorage){
-      changeColors(darkMode)
-    }
-    else {
-      changeColors(initialColors)
-    }
 
