@@ -20,7 +20,7 @@
         <div>
             <nav id="menu-bar">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="contato.html" target="blank">Contato</a></li>
                 </ul>
             </nav>
@@ -34,30 +34,19 @@
                 </div>
                 <div class="toggle">
                     <input id="switch" type="checkbox" name="theme">
-                    <label for="switch"></label>
+                    <label id="label-switch" for="switch"></label>
                 </div>
             </div>
-            <div id="content">
-                <div class="content-in-day-mode">
-                    <h1> &ensp; Quem é o Superman?</h1>
-                    <p >Superman ou Super-Homem é um super-herói de histórias em quadrinhos publicadas pela DC Comics. O personagem, entretanto, desde os anos 1930, já foi adaptado para diversos outros meios, como cinema, rádio, televisão, literatura e video game. Superman foi criado pela dupla de autores de quadrinhos Joe Shuster e Jerry Siegel. Sua primeira aparição aconteceu no verão de 1938, na revista Action Comics #1. O personagem nasceu no planeta fictício Krypton e tinha o nome de Kal-El. Foi enviado à Terra por seu pai cientista, Jor-El, momentos antes de Krypton explodir. O foguete aterrissou na cidade de Smallville (por alguns anos, foi traduzida no Brasil como Pequenópolis), onde o jovem Kal-El foi descoberto pelo casal de fazendeiros Jonathan Kent e Martha Kent. Conforme cresceu, Kal-El descobriu que tinha capacidades sobre-humanas. Quando não está com o tradicional uniforme azul e vermelho, vive com Lois Lane e Jimmy Olsen como Clark Kent, um repórter/jornalista no Planeta Diário.</p>
-                   
-                </div>
-                <div class="content-in-dark-mode">
-                    <h1 > &ensp; Quem é o Batman?</h1>
-                    <p >O Batman, também conhecido como Homem-Morcego, é um super-herói de quadrinhos publicados pela DC Comics. Criado pelo desenhista Bob Kane e pelo escritor Bill Finger, apareceu pela primeira vez na revista Detective Comics #27 (maio de 1939). Originalmente com o nome "o Bat-Man", o personagem também é conhecido por epítetos como "Cruzado Encapuzado" (The Caped Crusader), "Cavaleiro das Trevas" (The Dark Knight) e "Maior Detetive do Mundo" (The World's Greatest Detective).[7]
 
-                        A identidade secreta do Batman é Bruce Wayne, um bilionário americano, playboy, magnata de negócios, filantropo e dono da corporação Wayne Enterprises. Depois de testemunhar o assassinato dos seus pais enquanto criança, Wayne jurou vingança contra os criminosos — um juramento moderado por um ideal justiça. Wayne, então, treina física e intelectualmente e cria uma persona inspirada no morcego para combater o crime.[8] Batman opera na cidade fictícia de Gotham City, sendo ajudado por seu mordomo Alfred Pennyworth, o comissário da polícia Jim Gordon e aliados vigilantes como Robin. </p>
-                </div>
-                <div>
-                    <picture>
-                        <img  id="img-main" src="./assets/img/superman.png" alt="">
-                    </picture>
-                </div>
-            </div>
-                  
-        </div>
+            <form action="">
+                <label class="label-in-form" for="nome">Digite seu nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <label class="label-in-form" for="telefone">digite</label>
+                <input type="number" size="20"  id="telefone" name="telefone" maxlength="12" minlength="12" >
+                <label  class="label-in-form"  for="email"></label>
+                <input type="email" name="email" id="email" required size="20">
 
+            </form>
     </main>
 
     <footer>
